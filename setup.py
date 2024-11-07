@@ -1,6 +1,9 @@
 import pandas as pd
 import numpy as np
 import sqlite3
+
+print("Setting up the environment...")
+
 con = sqlite3.connect('db')
 items = pd.read_csv("https://raw.githubusercontent.com/theanalyticsarts/test/refs/heads/main/items.csv")
 sales = pd.read_csv("https://raw.githubusercontent.com/theanalyticsarts/test/refs/heads/main/sales.csv")
