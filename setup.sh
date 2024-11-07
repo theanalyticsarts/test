@@ -1,1 +1,3 @@
-echo "setting up the environment"
+echo "Setting up the environment..."
+
+echo "Done.
