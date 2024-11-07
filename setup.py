@@ -11,8 +11,8 @@ sales = pd.read_csv("https://raw.githubusercontent.com/theanalyticsarts/test/ref
 items.to_csv('items.csv', index=False)
 sales.to_csv('sales.csv', index=False)
 
-items.to_sql('items', index=False, con=con)
-sales.to_sql('sales', index=False, con=con)
+items.to_sql('items', index=False, con=con, if_exists='replace')
+sales.to_sql('sales', index=False, con=con, if_exists='replace')
 
 print("Done.")
 
