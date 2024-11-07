@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import sqlite3
 
-print("Setting up the environment...")
+print("Setting up the environment...", end=" ")
 
 con = sqlite3.connect('db')
 items = pd.read_csv("https://raw.githubusercontent.com/theanalyticsarts/test/refs/heads/main/items.csv")
